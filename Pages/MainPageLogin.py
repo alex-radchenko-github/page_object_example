@@ -31,14 +31,10 @@ class MainPageHelper(BasePage):
     def full_login(self, acc):
         login = acc["login"]
         pas = acc["pass"]
-        self.find_element(MainPageLoginLokators.LOCATOR_BUTTON_LOGIN).click()
-        search_field = self.find_element(MainPageLoginLokators.LOCATOR_EMAIL_FIELD)
-        search_field.send_keys(login)
-        search_field = self.find_element(MainPageLoginLokators.LOCATOR_PASSWORD_FIELD)
-        search_field.send_keys(pas)
-        time.sleep(5)
-        self.find_element(MainPageLoginLokators.LOCATOR_ENTER_BUTTON).click()
-        return self
+        self.click_on_the_yellow_button()
+        self.enter_email(login)
+        self.enter_password(pas)
+        self.click_on_the_enter_button()
 
     def login_check(self):
         check_el = self.find_element(MainPageLoginLokators.LOCATOR_CHECK_CREATE_COURS)
