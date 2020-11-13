@@ -4,6 +4,7 @@ from App import accounts
 
 
 def token():
+
     url = "https://auth.1iu.ru/api/account/login"
 
     data_req = [("consumer", "at"),

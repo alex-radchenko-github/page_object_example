@@ -23,6 +23,7 @@ class BasePage:
         return self.driver.get(self.base_url)
 
     def go_to_site_through_token(self):
+
         return self.driver.get(self.base_url_token)
 
     def switch_iframe(self, locator):

@@ -17,7 +17,7 @@ def test_login_from_main_page(browser):
 @allure.title("login_from_token")
 @pytest.mark.order2
 def test_login_from_token(browser):
-    create_course_page = MainPageHelper(browser)
-    create_course_page.go_to_site_through_token()
-    create_course_page.login_check()
+    test_login_from_token = MainPageHelper(browser)
+    test_login_from_token.go_to_site_through_token()
+    test_login_from_token.login_check()
 

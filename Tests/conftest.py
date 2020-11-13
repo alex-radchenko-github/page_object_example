@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 from App import browsers, remote_driver
 
-t_out = 20
+t_out = 30
 
 def pytest_addoption(parser):
     parser.addoption('--selenoid', action='store', default='mac',
