@@ -1,0 +1,23 @@
+import allure
+import pytest
+from App import accounts
+from Pages.MainPageLogin import MainPageHelper
+
+@allure.feature("login")
+@allure.title("login_from_main_page")
+@pytest.mark.order1
+
+def test_login_from_main_page(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature('login')
+@allure.title("login_from_token")
+@pytest.mark.order2
+def test_login_from_token(browser):
+    create_course_page = MainPageHelper(browser)
+    create_course_page.go_to_site_through_token()
+    create_course_page.login_check()
+

@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+selenium = "==4.0.0.a7"
+pytest = "*"
+allure-pytest = "*"
+requests = "*"
+
+[requires]
+python_version = "3.9"
