@@ -6,7 +6,7 @@ node {
     }
     stage("requirements") {
         sh 'pip install --upgrade pip'
-        sh 'pip3 install -r requirements.txt'
+        sh 'pip install -r requirements.txt'
     }
     stage("test") {
         sh 'pipenv run pytest -s -v --br_type=chrome --selenoid=serv TestSmokeTesting.py -sv --alluredir=allure_result'
