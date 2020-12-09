@@ -5,7 +5,7 @@ node {
         url: 'https://github.com/alex-radchenko-github/page_object_example'
     }
     stage("test") {
-        sh 'pytest -s -v --br_type=chrome --selenoid=serv TestSmokeTesting.py -sv --alluredir=allure_result'
+        sh '/usr/local/bin/pytest -s -v --br_type=chrome --selenoid=serv TestSmokeTesting.py -sv --alluredir=allure_result'
     }
     stage("report") {
         script {
