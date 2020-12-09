@@ -32,3 +32,5 @@ class BasePage:
 
     def switch_from_iframe(self):
         return self.driver.switch_to_default_content()
+
+
