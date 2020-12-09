@@ -1,0 +1,1 @@
+acc = {"radwexe": {"login": "radwexe@mail.ru", "pass": "111"}}
