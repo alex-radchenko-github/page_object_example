@@ -8,7 +8,7 @@ node {
         sh 'pip3 install -r requirements.txt'
     }
     stage("test") {
-        sh 'pipenv run pytest -s -v --br_type=chrome --selenoid=serv TestSmokeTesting.py -sv --alluredir=allure_result'
+        sh 'pytest -s -v --br_type=chrome --selenoid=serv TestSmokeTesting.py -sv --alluredir=allure_result'
     }
     stage("report") {
         script {
