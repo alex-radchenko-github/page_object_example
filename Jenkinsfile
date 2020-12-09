@@ -5,7 +5,7 @@ node {
         url: 'https://github.com/alex-radchenko-github/page_object_example'
     }
     stage("Install deps") {
-        sh 'pipenv install'
+        sh '/usr/local/bin/pipenv install'
     }
 
     stage("test") {
