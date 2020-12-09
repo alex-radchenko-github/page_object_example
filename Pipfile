@@ -6,11 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-selenium = "==4.0.0.a7"
+selenium = "==3.141.0"
 pytest = "*"
 allure-pytest = "*"
 requests = "*"
 pipenv = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.9python"
