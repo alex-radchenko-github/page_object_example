@@ -5,7 +5,7 @@ from App import browsers, remote_driver
 t_out = 30
 
 def pytest_addoption(parser):
-    parser.addoption('--selenoid', action='store', default='mac',
+    parser.addoption('--selenoid', action='store', default='serv',
                      help="Choose selenoid type: serv or mac")
     parser.addoption('--br_type', action='store', default='chrome',
                      help="Choose br_type type: chrome, firefox or opera")
