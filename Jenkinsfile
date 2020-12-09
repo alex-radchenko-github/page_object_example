@@ -4,9 +4,6 @@ node {
         git branch: 'master',
         url: 'https://github.com/alex-radchenko-github/page_object_example'
     }
-    stage("requirements") {
-        sh 'pip3 install -r requirements.txt'
-    }
     stage("test") {
         sh 'pytest -s -v --br_type=chrome --selenoid=serv TestSmokeTesting.py -sv --alluredir=allure_result'
     }
