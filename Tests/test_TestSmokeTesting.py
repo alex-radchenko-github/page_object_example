@@ -3,6 +3,7 @@ import pytest
 from App import accounts
 from Pages.MainPageLogin import MainPageHelper
 
+
 @allure.feature("login")
 @allure.title("test_login_from_main_page_with_valid_credetials")
 @pytest.mark.smoke

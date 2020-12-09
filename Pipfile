@@ -10,6 +10,7 @@ selenium = "==4.0.0.a7"
 pytest = "*"
 allure-pytest = "*"
 requests = "*"
+pipenv = "*"
 
 [requires]
 python_version = "3.9"
