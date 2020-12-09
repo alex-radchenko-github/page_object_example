@@ -5,6 +5,7 @@ node {
         url: 'https://github.com/alex-radchenko-github/page_object_example'
     }
     stage("requirements") {
+        sh 'pip install --upgrade pip'
         sh 'pip3 install -r requirements.txt'
     }
     stage("test") {
