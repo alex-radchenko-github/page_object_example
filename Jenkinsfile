@@ -5,7 +5,7 @@ node {
         url: 'https://github.com/alex-radchenko-github/page_object_example'
     }
     stage("test") {
-        sh '/usr/local/bin/pytest -s -v Tests/TestSmokeTesting.py'
+        sh '/usr/local/bin/pytest'
     }
     stage("report") {
         script {
