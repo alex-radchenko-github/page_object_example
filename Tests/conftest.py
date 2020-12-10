@@ -1,7 +1,7 @@
 import pytest
 from selenium import webdriver
-import app.browsers
-import app.remote_driver
+from  app.browsers import chrome, firefox, opera
+from app.remote_driver import ip_selenoid_mac, ip_selenoid_serv
 
 t_out = 30
 
@@ -15,22 +15,22 @@ def pytest_addoption(parser):
 def browser(request):
     br_type = request.config.getoption("br_type")
     if br_type == "chrome":
-        capabilities = app.browsers.chrome
+        capabilities = chrome
     elif br_type == "firefox":
-        capabilities = app.browsers.firefox
+        capabilities = firefox
     elif br_type == "opera":
-        capabilities = app.browsers.opera
+        capabilities = opera
     else:
         raise pytest.UsageError("--br_type Choose should be chrome, firefox or opera")
 
     selenoid = request.config.getoption("selenoid")
     if selenoid == "serv":
         browser = webdriver.Remote(
-            command_executor=app.remote_driver.ip_selenoid_serv,
+            command_executor=ip_selenoid_serv,
             desired_capabilities=capabilities)
     elif selenoid == "mac":
         browser = webdriver.Remote(
-            command_executor=app.remote_driver.ip_selenoid_mac,
+            command_executor=ip_selenoid_mac,
             desired_capabilities=capabilities)
     else:
         raise pytest.UsageError("--selenoid should be mac or serv")
