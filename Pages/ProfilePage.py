@@ -6,7 +6,7 @@ from selenium.webdriver.remote.file_detector import LocalFileDetector
 class ProfilePageLoginLokators:
     LOCATOR_ATTACH_FAVICON = (By.XPATH, '//*[@id="profile"]/div[1]/div/div/div[2]/div[1]/div/div[1]/div/div[2]/div/div[1]/div/label/span[1]')
 
-    ICON_PATH = "/Users/alexradchenko/Downloads/krest.jpeg"
+    #ICON_PATH = "/Users/alexradchenko/Downloads/krest.jpeg"
     LOCATOR_PROFILE_SAFE = (By.XPATH, "//*[contains(text(), 'Сохранить')]")
 
 class ProfileHelper(BasePage):
