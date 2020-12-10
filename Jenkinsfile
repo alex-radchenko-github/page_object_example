@@ -8,7 +8,7 @@ node {
         sh '/usr/local/bin/pip3.9 install -r requirements.txt'
     }
     stage("test") {
-        sh '/usr/local/bin/pipenv run /usr/local/bin/pytest -s -v'
+        sh '/usr/local/bin/pipenv run /usr/local/bin/pytest'
     }
     stage("report") {
         script {
