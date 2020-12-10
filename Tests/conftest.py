@@ -1,26 +1,38 @@
 import pytest
 from selenium import webdriver
+import App.browsers as browsers
+import App.remote_driver as remote_driver
 t_out = 30
 
 def pytest_addoption(parser):
-    parser.addoption('--selenoid', action='store', default='selenoid',
+    parser.addoption('--selenoid', action='store', default='mac',
                      help="Choose selenoid type: serv or mac")
-
+    parser.addoption('--br_type', action='store', default='chrome',
+                     help="Choose br_type type: chrome, firefox or opera")
 
 @pytest.fixture(scope="function")
 def browser(request):
-    chrome = {
-        "browserName": "chrome",
-        "version": "87.0",
-        "enableVNC": True,
-        "enableVideo": False
-    }
-    capabilities = chrome
+    br_type = request.config.getoption("br_type")
+    if br_type == "chrome":
+        capabilities = browsers.chrome
+    elif br_type == "firefox":
+        capabilities = browsers.firefox
+    elif br_type == "opera":
+        capabilities = browsers.opera
+    else:
+        raise pytest.UsageError("--br_type Choose should be chrome, firefox or opera")
 
-    browser = webdriver.Remote(
-        command_executor="http://164.90.145.233:4444/wd/hub",
-        desired_capabilities=capabilities)
-
+    selenoid = request.config.getoption("selenoid")
+    if selenoid == "serv":
+        browser = webdriver.Remote(
+            command_executor=remote_driver.ip_selenoid_serv,
+            desired_capabilities=capabilities)
+    elif selenoid == "mac":
+        browser = webdriver.Remote(
+            command_executor=remote_driver.ip_selenoid_mac,
+            desired_capabilities=capabilities)
+    else:
+        raise pytest.UsageError("--selenoid should be mac or serv")
     browser.maximize_window()
     browser.implicitly_wait(t_out)
     yield browser

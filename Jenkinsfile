@@ -8,7 +8,7 @@ node {
         sh '/usr/local/bin/pip3.9 install -r requirements.txt'
     }
     stage("test") {
-        sh '/usr/local/bin/pipenv run /usr/local/bin/pytest -sv --alluredir=allure_result'
+        sh '/usr/local/bin/pipenv run /usr/local/bin/pytest -s -v --br_type=chrome --selenoid=serv -sv --alluredir=allure_result'
     }
     stage("report") {
         script {
