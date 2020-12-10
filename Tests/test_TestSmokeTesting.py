@@ -1,6 +1,6 @@
 import allure
 import pytest
-from app import accounts
+from App import accounts
 from Pages.MainPageLogin import MainPageHelper
 from Pages.ProfilePage import ProfileHelper
 from selenium.webdriver.common.by import By

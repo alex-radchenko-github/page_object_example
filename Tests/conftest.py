@@ -1,16 +1,19 @@
 import pytest
 from selenium import webdriver
-from  app.browsers import chrome, firefox, opera
-from app.remote_driver import ip_selenoid_mac, ip_selenoid_serv
+from App.browsers import chrome, firefox, opera
+from App.remote_driver import ip_selenoid_mac, ip_selenoid_serv
+
 debug = True
 
 t_out = 30
+
 
 def pytest_addoption(parser):
     parser.addoption('--selenoid', action='store', default='mac',
                      help="Choose selenoid type: serv or mac")
     parser.addoption('--br_type', action='store', default='chrome',
                      help="Choose br_type type: chrome, firefox or opera")
+
 
 @pytest.fixture(scope="function")
 def browser(request):

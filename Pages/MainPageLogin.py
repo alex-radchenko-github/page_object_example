@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from app.BaseApp import BasePage
+from App.BaseApp import BasePage
 import time
 
 
