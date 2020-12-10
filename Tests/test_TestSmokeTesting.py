@@ -25,4 +25,3 @@ def test_login_from_token(browser):
     login_from_token = MainPageHelper(browser)
     login_from_token.go_to_site_through_token()
     login_from_token.login_check()
-
