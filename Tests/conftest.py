@@ -1,11 +1,7 @@
 import pytest
 from selenium import webdriver
 from App.remote_driver import ip_selenoid_mac, ip_selenoid_serv
-
-debug = True
-
 t_out = 30
-
 
 def pytest_addoption(parser):
     parser.addoption('--selenoid', action='store', default='mac',
