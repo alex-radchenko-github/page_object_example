@@ -9,7 +9,6 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="function")
 def browser(request):
-    br_type = request.config.getoption("br_type")
     chrome = {
         "browserName": "chrome",
         "version": "87.0",
