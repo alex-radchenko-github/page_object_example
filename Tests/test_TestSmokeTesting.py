@@ -8,6 +8,8 @@ import time
 
 from selenium.webdriver.remote.file_detector import LocalFileDetector
 
+debug = True
+
 @allure.feature("login")
 @allure.title("test_login_from_main_page_with_valid_credetials")
 @pytest.mark.smoke

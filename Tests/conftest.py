@@ -2,6 +2,7 @@ import pytest
 from selenium import webdriver
 from  app.browsers import chrome, firefox, opera
 from app.remote_driver import ip_selenoid_mac, ip_selenoid_serv
+debug = True
 
 t_out = 30
 
