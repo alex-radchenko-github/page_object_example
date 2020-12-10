@@ -3,7 +3,7 @@ from selenium import webdriver
 t_out = 30
 
 def pytest_addoption(parser):
-    parser.addoption('--selenoid', action='store', default='mac',
+    parser.addoption('--selenoid', action='store', default='selenoid',
                      help="Choose selenoid type: serv or mac")
 
 
