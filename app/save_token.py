@@ -1,6 +1,6 @@
 import requests
 import urllib.parse
-from App import accounts
+from app import accounts
 
 
 def token():

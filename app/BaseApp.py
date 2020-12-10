@@ -1,7 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-from App import save_token
+from app import save_token
 from Tests import conftest
 
 
@@ -21,6 +21,9 @@ class BasePage:
 
     def go_to_site(self):
         return self.driver.get(self.base_url)
+
+    def go_to_url(self, url):
+        return self.driver.get(url)
 
     def go_to_site_through_token(self):
 

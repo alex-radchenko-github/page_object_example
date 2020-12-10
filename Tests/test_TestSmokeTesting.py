@@ -1,8 +1,12 @@
 import allure
 import pytest
-from App import accounts
+from app import accounts
 from Pages.MainPageLogin import MainPageHelper
+from Pages.ProfilePage import ProfileHelper
+from selenium.webdriver.common.by import By
+import time
 
+from selenium.webdriver.remote.file_detector import LocalFileDetector
 
 @allure.feature("login")
 @allure.title("test_login_from_main_page_with_valid_credetials")
@@ -21,3 +25,4 @@ def test_login_from_token(browser):
     login_from_token = MainPageHelper(browser)
     login_from_token.go_to_site_through_token()
     login_from_token.login_check()
+
