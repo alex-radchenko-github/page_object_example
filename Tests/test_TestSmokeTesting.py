@@ -6,8 +6,6 @@ from Pages.ProfilePage import ProfileHelper
 from selenium.webdriver.common.by import By
 import time
 
-from selenium.webdriver.remote.file_detector import LocalFileDetector
-
 debug = True
 
 @allure.feature("login")
