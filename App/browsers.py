@@ -16,8 +16,6 @@ firefox = {
     }
 }
 
-
-
 opera = {
     "browserName": "opera",
     "browserVersion": "72.0",
@@ -26,7 +24,6 @@ opera = {
         "enableVideo": False
     }
 }
-
 
 MicrosoftEdge = {
     "browserName": "MicrosoftEdge",
