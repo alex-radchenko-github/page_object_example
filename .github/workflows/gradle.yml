@@ -37,6 +37,14 @@ jobs:
       run: |
         pytest Tests --br_type=chrome --selenoid=serv -sv --alluredir=allure_result
 
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+    - name: Build with Gradle
+      run: ./gradlew build allureReport
+
+
+
     - uses: actions/upload-artifact@v2
       with:
         name: allure-report
