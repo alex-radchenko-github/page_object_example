@@ -6,9 +6,9 @@ t_out = 30
 import argparse
 
 def pytest_addoption(parser):
-    parser.addoption('--selenoid', action='store', default='mac',
+    parser.addoption('--selenoid', action='store', default='selenoid',
                      help="Choose selenoid type: serv or mac")
-    parser.addoption('--br_type', action='store', default='safari',
+    parser.addoption('--br_type', action='store', default='chrome',
                      help="Choose br_type type: chrome, firefox, opera, safari, MicrosoftEdge")
 
 @pytest.fixture(scope="function")
