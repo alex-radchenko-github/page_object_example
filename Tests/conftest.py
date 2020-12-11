@@ -8,8 +8,8 @@ import argparse
 def pytest_addoption(parser):
     parser.addoption('--selenoid', action='store', default='mac',
                      help="Choose selenoid type: serv or mac")
-    parser.addoption('--br_type', action='store', default='chrome',
-                     help="Choose br_type type: chrome, firefox or opera")
+    parser.addoption('--br_type', action='store', default='safari',
+                     help="Choose br_type type: chrome, firefox, opera, safari, MicrosoftEdge")
 
 @pytest.fixture(scope="function")
 def browser(request):
@@ -20,8 +20,12 @@ def browser(request):
         capabilities = browsers.firefox
     elif br_type == "opera":
         capabilities = browsers.opera
+    elif br_type == "safari":
+        capabilities = browsers.safari
+    elif br_type == "MicrosoftEdge":
+        capabilities = browsers.MicrosoftEdge
     else:
-        raise pytest.UsageError("--br_type Choose should be chrome, firefox or opera")
+        raise pytest.UsageError("--br_type Choose should be chrome, firefox, opera, safari, MicrosoftEdge")
 
     selenoid = request.config.getoption("selenoid")
     if selenoid == "serv":
