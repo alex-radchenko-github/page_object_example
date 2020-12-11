@@ -38,7 +38,7 @@ jobs:
         pytest Tests --br_type=chrome --selenoid=serv -sv --alluredir=allure_result
 
     - name: Build with Gradle
-      run: ./github build allureReport
+      run: github build allureReport
 
 
 
