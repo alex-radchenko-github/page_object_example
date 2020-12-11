@@ -1,1 +1,16 @@
 name: Python CI with Gradle
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  build:
+    runs: ubuntu-lastest
+    strategy:
+      matrix:
+        python: [3.9]
+  steps:
+    - name: Start selenoid
+      uses: Xotabu4/selenoid-github-action@v1
