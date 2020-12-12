@@ -6,8 +6,8 @@ t_out = 30
 
 
 def pytest_addoption(parser):
-    parser.addoption('--selenoid', action='store', default='mac',
-                     help="Choose selenoid type: serv or mac")
+    parser.addoption('--selenoid', action='store', default='localhost',
+                     help="Choose selenoid type: serv or localhost")
     parser.addoption('--br_type', action='store', default='chrome',
                      help="Choose br_type type: chrome, firefox, opera, safari, MicrosoftEdge")
 
@@ -32,12 +32,12 @@ def browser(request):
         browser = webdriver.Remote(
             command_executor=remote_driver.ip_selenoid_serv,
             desired_capabilities=capabilities)
-    elif selenoid == "mac":
+    elif selenoid == "localhost":
         browser = webdriver.Remote(
             command_executor=remote_driver.ip_selenoid_mac,
             desired_capabilities=capabilities)
     else:
-        raise pytest.UsageError("--selenoid should be mac or serv")
+        raise pytest.UsageError("--selenoid should be localhost or serv")
     browser.maximize_window()
     browser.implicitly_wait(t_out)
     yield browser
