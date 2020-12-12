@@ -42,3 +42,4 @@ def browser(request):
     browser.implicitly_wait(t_out)
     yield browser
     browser.quit()
+
