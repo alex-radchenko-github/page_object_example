@@ -20,53 +20,21 @@ def test_login_from_main_page_with_valid_credetials(browser, rp_logger):
     main_page.go_to_site()
     main_page.full_login(accounts.acc["radwexe"])
     main_page.login_check()
-
+    """
+    Description of the test case which will be sent to Report Portal
+    """
     rp_logger.info("Case1. Step1")
-    x = "this"
-    rp_logger.info("x is: %s", x)
-    assert 'h' in x
-
-    # Message with an attachment.
-    import subprocess
-    free_memory = subprocess.check_output("free -h".split())
-    rp_logger.info(
-        "Case1. Memory consumption",
-        attachment={
-            "name": "free_memory.txt",
-            "data": free_memory,
-            "mime": "application/octet-stream",
-        },
-    )
-
-    # This debug message will not be sent to the Report Portal.
-    rp_logger.debug("Case1. Debug message")
 
 
 @allure.feature('login')
 @allure.title("login_from_token")
 @pytest.mark.smoke
 def test_login_from_token(browser, rp_logger):
+    """
+    Description of the test case which will be sent to Report Portal
+    """
+    rp_logger.info("Case1. Step1")
+
     login_from_token = MainPageHelper(browser)
     login_from_token.go_to_site_through_token()
     login_from_token.login_check()
-
-    rp_logger.info("Case1. Step1")
-    x = "this"
-    rp_logger.info("x is: %s", x)
-    assert 'h' in x
-
-    # Message with an attachment.
-    import subprocess
-    free_memory = subprocess.check_output("free -h".split())
-    rp_logger.info(
-        "Case1. Memory consumption",
-        attachment={
-            "name": "free_memory.txt",
-            "data": free_memory,
-            "mime": "application/octet-stream",
-        },
-    )
-
-    # This debug message will not be sent to the Report Portal.
-    rp_logger.debug("Case1. Debug message")
-
