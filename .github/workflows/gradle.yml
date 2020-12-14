@@ -36,6 +36,12 @@ jobs:
       run: |
         pytest Tests
 
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: allure_result/
+
+
     - name: Test marketplace action
       uses: simple-elf/allure-report-action@master
       if: always()
