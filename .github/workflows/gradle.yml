@@ -35,4 +35,5 @@ jobs:
     - name: Test with pytest
       run: |
         pytest Tests
-
+        docker build . -t allure-gen
+        docker run -v ${PWD}:/github/workspace allure-gen allure-results allure-report
