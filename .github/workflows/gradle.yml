@@ -36,28 +36,22 @@ jobs:
       run: |
         pytest Tests
 
-    - name: Get Allure history
-      uses: actions/checkout@v2
-      if: always()
-      continue-on-error: true
-      with:
-        ref: gh-pages
-        path: allure_result
 
-    - name: Allure Report action from marketplace
-      uses: simple-elf/allure-report-action@master
-      if: always()
-      #id: allure-report
-      with:
-        allure_results: allure_result
-        gh_pages: gh-pages
-        allure_report: allure_result
-        allure_history: allure-history
+    - name: 'Allure report'
+      description: 'Generate Allure report for test suite'
+      inputs:
+        results-dir:  # id of input
+          description: 'Allure test result data dir'
+          required: true
+          default: 'allure-results'
+        report-dir:
+          description: 'Allure report target dir'
+          required: true
+          default: 'allure-report'
 
-    - name: Deploy report to Github Pages
-      if: always()
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: allure-history
+      runs:
+        using: 'docker'
+        image: 'Dockerfile'
+        args:
+          - ${{ inputs.results-dir }}
+          - ${{ inputs.report-dir }}
