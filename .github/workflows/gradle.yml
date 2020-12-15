@@ -40,7 +40,7 @@ jobs:
       run: |
         pytest Tests -sv --alluredir=allure_result
 
-    - uses: actions/download-artifact@v2
+    - uses: actions/upload-artifact@v2
       with:
         name: allure_result
-        path: allure_result/
+        path: allure_result
