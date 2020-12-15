@@ -37,12 +37,7 @@ jobs:
         pytest Tests
 
 
-  allure:
-    name: Generate Allure Report
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
-
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
