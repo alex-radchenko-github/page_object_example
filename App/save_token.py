@@ -18,5 +18,3 @@ def token():
     }
     response = requests.request("POST", url, headers=headers1, data=urllib.parse.urlencode(data_req))
     return response.json()['sid']
-
-
