@@ -36,27 +36,21 @@ jobs:
       run: |
         pytest Tests
 
-
-    - name: Set up JDK
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
-
     - name: Get Allure history
       uses: actions/checkout@v2
       if: always()
       continue-on-error: true
       with:
         ref: gh-pages
-        path: gh-pages
+        path: allure-results
 
     - name: Allure Report action from marketplace
       uses: simple-elf/allure-report-action@master
       if: always()
       #id: allure-report
       with:
-        allure_results: allure-results
-        #gh_pages: gh-pages
+        #allure_results: allure-results
+        gh_pages: gh-pages
         #allure_report: allure-report
         allure_history: allure-history
 
