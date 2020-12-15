@@ -14,8 +14,8 @@ jobs:
         python-version: ['3.8']
 
     steps:
-    - name: Start selenoid
-      uses: Xotabu4/selenoid-github-action@v1
+#    - name: Start selenoid
+#      uses: Xotabu4/selenoid-github-action@v1
 
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
@@ -38,29 +38,4 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest Tests
-
-
-    - uses: actions/upload-artifact@v2
-      with:
-        name: allure-results
-        path: allure-results
-
-    - name: Test marketplace action
-      uses: simple-elf/allure-report-action@master
-      if: always()
-      id: allure-report
-      with:
-        allure_results: build/allure-results
-        gh_pages: gh-pages
-        allure_report: allure-results
-        allure_history: allure-results
-
-    - name: Deploy report to Github Pages
-      if: always()
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: allure-results
-
+        pytest Tests -sv
