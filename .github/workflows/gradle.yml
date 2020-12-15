@@ -39,3 +39,14 @@ jobs:
     - name: Test with pytest
       run: |
         pytest Tests -sv --alluredir=allure_result
+
+    - uses: actions/checkout@v2
+
+    - uses: actions/download-artifact@v2
+      with:
+        name: my-artifact
+        path: allure_result
+
+    - name: Display structure of downloaded files
+      run: ls -R
+      working-directory: allure_result
