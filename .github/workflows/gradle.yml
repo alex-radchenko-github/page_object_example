@@ -1,11 +1,13 @@
-name: allure-python-pytest
+name: Python package
 
 on:
   push:
-    branches-ignore:
-      - '!master'
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
