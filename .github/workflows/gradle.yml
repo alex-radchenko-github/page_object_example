@@ -40,10 +40,10 @@ jobs:
       run: |
         pytest Tests -sv --alluredir=allure_results
 
-#    - uses: actions/upload-artifact@v2
-#      with:
-#        name: allure_results
-#        path: allure_results
+    - uses: actions/upload-artifact@v2
+      with:
+        name: allure_results
+        path: allure_results
 
 
 
