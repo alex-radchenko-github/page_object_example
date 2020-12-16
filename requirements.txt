@@ -25,3 +25,4 @@ toml==0.10.2
 urllib3==1.26.2
 virtualenv==20.2.2
 virtualenv-clone==0.5.4
+flake8>=3.8.3
