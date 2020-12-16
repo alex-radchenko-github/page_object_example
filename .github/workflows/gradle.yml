@@ -46,6 +46,7 @@ jobs:
 #        path: allure_results
 
 
+
   allure:
     name: Generate Allure Report
     runs-on: ubuntu-latest
