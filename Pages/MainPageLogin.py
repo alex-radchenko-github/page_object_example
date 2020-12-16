@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from App.BaseApp import BasePage
-import time
+import allure
 
 
 class MainPageLoginLokators:
@@ -12,22 +12,27 @@ class MainPageLoginLokators:
 
 class MainPageHelper(BasePage):
 
+    @allure.step
     def click_on_the_yellow_button(self):
         return self.find_element(MainPageLoginLokators.LOCATOR_BUTTON_LOGIN).click()
 
+    @allure.step
     def enter_email(self, login):
         search_field = self.find_element(MainPageLoginLokators.LOCATOR_EMAIL_FIELD)
         search_field.send_keys(login)
         return search_field
 
+    @allure.step
     def enter_password(self, pas):
         search_field = self.find_element(MainPageLoginLokators.LOCATOR_PASSWORD_FIELD)
         search_field.send_keys(pas)
         return search_field
 
+    @allure.step
     def click_on_the_enter_button(self):
         return self.find_element(MainPageLoginLokators.LOCATOR_ENTER_BUTTON).click()
 
+    @allure.step
     def full_login(self, acc):
         login = acc["login"]
         pas = acc["pass"]
@@ -36,6 +41,7 @@ class MainPageHelper(BasePage):
         self.enter_password(pas)
         self.click_on_the_enter_button()
 
+    @allure.step
     def login_check(self):
         check_el = self.find_element(MainPageLoginLokators.LOCATOR_CHECK_CREATE_COURS)
         assert check_el.is_displayed() == True

@@ -1,1 +1,1 @@
-acc = {"login":"radwexe@mail.ru", "pass":"111"}
+acc = {"radwexe":{"login":"radwexe@mail.ru", "pass":"111"}}
