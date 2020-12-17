@@ -10,6 +10,7 @@ class MainPageLoginLokators:
     LOCATOR_ENTER_BUTTON = (By.XPATH, "//button[contains(text(), 'Войти')]")
     LOCATOR_CHECK_CREATE_COURS = (By.LINK_TEXT, "Создать курс в папке")
 
+
 class MainPageHelper(BasePage):
 
     @allure.step
@@ -44,4 +45,4 @@ class MainPageHelper(BasePage):
     @allure.step
     def login_check(self):
         check_el = self.find_element(MainPageLoginLokators.LOCATOR_CHECK_CREATE_COURS)
-        assert check_el.is_displayed() == False
+        assert check_el.is_displayed() == True
