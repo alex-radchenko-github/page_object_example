@@ -3,6 +3,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from App import save_token
 from Tests import conftest
+import allure
 
 
 class BasePage:
@@ -19,19 +20,24 @@ class BasePage:
         return WebDriverWait(self.driver, time).until(EC.presence_of_all_elements_located(locator),
                                                       message=f"Can't find elements by locator {locator}")
 
+    @allure.step
     def go_to_site(self):
         return self.driver.get(self.base_url)
 
+    @allure.step
     def go_to_site_through_token(self):
 
         return self.driver.get(self.base_url_token)
 
+    @allure.step
     def switch_iframe(self, locator):
         time.sleep(3)
         return self.driver.switch_to_frame(locator)
 
+    @allure.step
     def switch_from_iframe(self):
         return self.driver.switch_to_default_content()
 
+    @allure.step
     def screenshot(self):
         return self.driver.get_screenshot_as_png()
