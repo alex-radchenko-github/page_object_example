@@ -41,15 +41,13 @@ jobs:
         pytest Tests
 
 
-    - name: Create Report
-      if: always()
-      # trying to save history of previous runs if it is exists
-      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run report
+
     - uses: actions/upload-artifact@v1
       if: always()
       with:
         name: allure-results
-        path: ./allure-results
+        path: allure-results
+
     - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.1.0
       if: always()
@@ -57,7 +55,7 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: master # The branch the action should deploy to.
         FOLDER: allure-results # The folder the action should deploy.
-        TARGET_FOLDER: docs
+        TARGET_FOLDER: allure-results
 
 
 
