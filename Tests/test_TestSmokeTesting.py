@@ -13,7 +13,6 @@ def test_login_from_main_page(browser):
     main_page.go_to_site()
     main_page.full_login(accounts.acc["radwexe"])
     main_page.login_check()
-    allure.attach(main_page.screenshot(), name="Screenshot", attachment_type=AttachmentType.PNG)
 
 
 @allure.feature('login')
@@ -23,4 +22,4 @@ def test_login_from_token(browser):
     test_login_from_token = MainPageHelper(browser)
     test_login_from_token.go_to_site_through_token()
     test_login_from_token.login_check()
-    allure.attach(test_login_from_token.screenshot(), name="Screenshot", attachment_type=AttachmentType.PNG)
+

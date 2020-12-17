@@ -1,6 +1,8 @@
 import pytest
 from selenium import webdriver
 from App import browsers, remote_driver
+import allure
+from allure_commons.types import AttachmentType
 
 t_out = 30
 
@@ -37,4 +39,5 @@ def browser(request):
     browser.maximize_window()
     browser.implicitly_wait(t_out)
     yield browser
+    allure.attach(browser.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
     browser.quit()
