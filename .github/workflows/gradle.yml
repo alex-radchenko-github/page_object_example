@@ -42,11 +42,11 @@ jobs:
 
 
 
-    - uses: actions/upload-artifact@v1
-      if: always()
-      with:
-        name: allure-results
-        path: allure-results
+#    - uses: actions/upload-artifact@v1
+#      if: always()
+#      with:
+#        name: allure-results
+#        path: allure-results
 
     - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.1.0
