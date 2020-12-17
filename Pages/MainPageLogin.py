@@ -5,7 +5,7 @@ import allure
 
 class MainPageLoginLokators:
     LOCATOR_BUTTON_LOGIN = (By.XPATH, "//span[contains(text(),'Войти')]")
-    LOCATOR_EMAIL_FIELD = (By.XPATH, "1111//input[@name='login']")
+    LOCATOR_EMAIL_FIELD = (By.XPATH, "//input[@name='login']")
     LOCATOR_PASSWORD_FIELD = (By.XPATH, "//input[@name='password']")
     LOCATOR_ENTER_BUTTON = (By.XPATH, "//button[contains(text(), 'Войти')]")
     LOCATOR_CHECK_CREATE_COURS = (By.LINK_TEXT, "Создать курс в папке")
