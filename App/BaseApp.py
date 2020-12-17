@@ -32,3 +32,6 @@ class BasePage:
 
     def switch_from_iframe(self):
         return self.driver.switch_to_default_content()
+
+    def screenshot(self):
+        return self.driver.get_screenshot_as_png()
