@@ -70,3 +70,129 @@ def test_login_from_token66(browser):
     test_login_from_token = MainPageHelper(browser)
     test_login_from_token.go_to_site_through_token()
     test_login_from_token.login_check()
+
+@allure.feature("login77")
+@allure.title("login_from_main_page77")
+@pytest.mark.smoke
+def test_login_from_main_pag77(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag88(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag99(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag1010(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag1111(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag12(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag13(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag14(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag15(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag16(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag17(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag18(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag19(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
+
+@allure.feature("login55")
+@allure.title("login_from_main_page55")
+@pytest.mark.smoke
+def test_login_from_main_pag20(browser):
+    main_page = MainPageHelper(browser)
+    main_page.go_to_site()
+    main_page.full_login(accounts.acc["radwexe"])
+    main_page.login_check()
