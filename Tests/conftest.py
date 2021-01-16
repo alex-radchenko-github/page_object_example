@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from App import browsers, remote_driver
+from src import browsers, remote_driver
 import allure
 from allure_commons.types import AttachmentType
 

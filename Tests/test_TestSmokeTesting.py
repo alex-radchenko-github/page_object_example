@@ -1,8 +1,7 @@
 import allure
 import pytest
-from App import accounts
-from Pages.MainPageLogin import MainPageHelper
-from allure_commons.types import AttachmentType
+from src import accounts
+from src.Pages.MainPageLogin import MainPageHelper
 
 
 @allure.feature("login")
