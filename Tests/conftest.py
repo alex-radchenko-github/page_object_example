@@ -12,7 +12,7 @@ def pytest_addoption(parser):
     parser.addoption('--br_type', action='store', default='chrome',
                      help="Choose br_type type: chrome, firefox or opera")
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="function")
 def browser(request):
     br_type = request.config.getoption("br_type")
     if br_type == "chrome":
