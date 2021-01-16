@@ -4,7 +4,7 @@ from App import browsers, remote_driver
 import allure
 from allure_commons.types import AttachmentType
 
-t_out = 30
+T_OUT = 30
 
 def pytest_addoption(parser):
     parser.addoption('--selenoid', action='store', default='mac',
@@ -37,7 +37,7 @@ def browser(request):
         raise pytest.UsageError("--selenoid should be mac or serv")
 
     browser.maximize_window()
-    browser.implicitly_wait(t_out)
+    browser.implicitly_wait(T_OUT)
     yield browser
     allure.attach(browser.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
     browser.quit()
