@@ -4,7 +4,7 @@ from App import browsers, remote_driver
 import allure
 from allure_commons.types import AttachmentType
 
-T_OUT = 30
+T_OUT = 25
 
 def pytest_addoption(parser):
     parser.addoption('--selenoid', action='store', default='mac',
