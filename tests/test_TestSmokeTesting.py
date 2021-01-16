@@ -1,7 +1,7 @@
 import allure
 import pytest
 from src import accounts
-from src.Pages.MainPageLogin import MainPageHelper
+from src.pages.mainpagelogin import MainPageHelper
 
 
 @allure.feature("login")
