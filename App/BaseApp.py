@@ -19,7 +19,7 @@ class BasePage:
     def find_elements(self, locator, time=conftest.T_OUT):
         return WebDriverWait(self.driver, time).until(EC.presence_of_all_elements_located(locator),
                                                       message=f"Can't find elements by locator {locator}")
-
+    #go to page
     @allure.step
     def go_to_site(self):
         return self.driver.get(self.base_url)
