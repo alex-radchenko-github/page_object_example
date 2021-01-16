@@ -2,7 +2,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from src import save_token
-from Tests import conftest
+from tests import conftest
 import allure
 
 
