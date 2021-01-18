@@ -1,0 +1,334 @@
+{
+  "uid" : "909810d9d3ca8a23",
+  "name" : "test_AT_2_login_from_main_page_with_invalid_credentials",
+  "fullName" : "tests.Regression testing.Smoke tests.Login.test_TestSmokeTesting#test_AT_2_login_from_main_page_with_invalid_credentials",
+  "historyId" : "d82470d343457f2d441584fc361f9c4a",
+  "time" : {
+    "start" : 1610946051296,
+    "stop" : 1610946060775,
+    "duration" : 9479
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1610946046543,
+      "stop" : 1610946051295,
+      "duration" : 4752
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "go_to_site",
+      "time" : {
+        "start" : 1610946051733,
+        "stop" : 1610946057629,
+        "duration" : 5896
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'/'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "full_login",
+      "time" : {
+        "start" : 1610946057629,
+        "stop" : 1610946059989,
+        "duration" : 2360
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "click_on_the_yellow_button",
+        "time" : {
+          "start" : 1610946057629,
+          "stop" : 1610946058214,
+          "duration" : 585
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "find_element",
+          "time" : {
+            "start" : 1610946057629,
+            "stop" : 1610946058029,
+            "duration" : 400
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//span[contains(text(),'Войти')]\")"
+          }, {
+            "name" : "time",
+            "value" : "25"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "enter_email",
+        "time" : {
+          "start" : 1610946058214,
+          "stop" : 1610946059086,
+          "duration" : 872
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "find_element",
+          "time" : {
+            "start" : 1610946058214,
+            "stop" : 1610946058373,
+            "duration" : 159
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//input[@name='login']\")"
+          }, {
+            "name" : "time",
+            "value" : "25"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "login",
+          "value" : "'radwexe@mail.ru'"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "enter_password",
+        "time" : {
+          "start" : 1610946059086,
+          "stop" : 1610946059437,
+          "duration" : 351
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "find_element",
+          "time" : {
+            "start" : 1610946059087,
+            "stop" : 1610946059149,
+            "duration" : 62
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//input[@name='password']\")"
+          }, {
+            "name" : "time",
+            "value" : "25"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "pas",
+          "value" : "'1111'"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "click_on_the_enter_button",
+        "time" : {
+          "start" : 1610946059437,
+          "stop" : 1610946059989,
+          "duration" : 552
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "find_element",
+          "time" : {
+            "start" : 1610946059437,
+            "stop" : 1610946059533,
+            "duration" : 96
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//button[contains(text(), 'Войти')]\")"
+          }, {
+            "name" : "time",
+            "value" : "25"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "acc",
+        "value" : "{'login': 'radwexe@mail.ru', 'pass': '1111'}"
+      } ],
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "check_invalid_credentials",
+      "time" : {
+        "start" : 1610946059990,
+        "stop" : 1610946060775,
+        "duration" : 785
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "find_element",
+        "time" : {
+          "start" : 1610946059990,
+          "stop" : 1610946060642,
+          "duration" : 652
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', \"//*[@class='responseError']\")"
+        }, {
+          "name" : "time",
+          "value" : "25"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 12,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1610946060777,
+      "stop" : 1610946062894,
+      "duration" : 2117
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ae62a50c14b79156",
+      "name" : "Screenshot",
+      "source" : "ae62a50c14b79156.png",
+      "type" : "image/png",
+      "size" : 209573
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "test_UI"
+  }, {
+    "name" : "feature",
+    "value" : "login"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.Regression testing.Smoke tests.Login"
+  }, {
+    "name" : "suite",
+    "value" : "test_TestSmokeTesting"
+  }, {
+    "name" : "host",
+    "value" : "fv-az21-495"
+  }, {
+    "name" : "thread",
+    "value" : "4747-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.Regression testing.Smoke tests.Login.test_TestSmokeTesting"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://app.qase.io/case/AT-2",
+    "url" : "https://app.qase.io/case/AT-2",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "test_UI", "smoke" ]
+  },
+  "source" : "909810d9d3ca8a23.json",
+  "parameterValues" : [ ]
+}

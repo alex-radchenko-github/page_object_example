@@ -1,0 +1,163 @@
+{
+  "uid" : "ff6621e692240f61",
+  "name" : "test_AT_5_login_from_token",
+  "fullName" : "tests.Regression testing.Smoke tests.Login.test_TestSmokeTesting#test_AT_5_login_from_token",
+  "historyId" : "8f310c904882c6c0951413e9e7643371",
+  "time" : {
+    "start" : 1610946079987,
+    "stop" : 1610946089488,
+    "duration" : 9501
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1610946076848,
+      "stop" : 1610946079986,
+      "duration" : 3138
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "go_to_site_through_token",
+      "time" : {
+        "start" : 1610946080416,
+        "stop" : 1610946089241,
+        "duration" : 8825
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "login_check",
+      "time" : {
+        "start" : 1610946089241,
+        "stop" : 1610946089488,
+        "duration" : 247
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "find_element",
+        "time" : {
+          "start" : 1610946089241,
+          "stop" : 1610946089449,
+          "duration" : 208
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('link text', 'Создать курс в папке')"
+        }, {
+          "name" : "time",
+          "value" : "25"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1610946089489,
+      "stop" : 1610946090478,
+      "duration" : 989
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "50288a80009d065e",
+      "name" : "Screenshot",
+      "source" : "50288a80009d065e.png",
+      "type" : "image/png",
+      "size" : 68568
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "test_UI"
+  }, {
+    "name" : "feature",
+    "value" : "login"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.Regression testing.Smoke tests.Login"
+  }, {
+    "name" : "suite",
+    "value" : "test_TestSmokeTesting"
+  }, {
+    "name" : "host",
+    "value" : "fv-az21-495"
+  }, {
+    "name" : "thread",
+    "value" : "4744-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.Regression testing.Smoke tests.Login.test_TestSmokeTesting"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://app.qase.io/case/AT-5",
+    "url" : "https://app.qase.io/case/AT-5",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "test_UI", "smoke" ]
+  },
+  "source" : "ff6621e692240f61.json",
+  "parameterValues" : [ ]
+}

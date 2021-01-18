@@ -1,0 +1,162 @@
+{
+  "d2dbc3d866c68ddd5b20d8daa3a723fa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a5b13c0b0a560ecd",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/a5b13c0b0a560ecd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610946051690,
+        "stop" : 1610946075762,
+        "duration" : 24072
+      }
+    } ]
+  },
+  "d63c9dee311a9501f51d5c7c8d382c71" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "919dd9524398a162",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/919dd9524398a162",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610946050839,
+        "stop" : 1610946075826,
+        "duration" : 24987
+      }
+    } ]
+  },
+  "5ce805ea10db0a573c0a40bfd8a75fd7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a37d10bac2f28e1b",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/a37d10bac2f28e1b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610946066664,
+        "stop" : 1610946077099,
+        "duration" : 10435
+      }
+    } ]
+  },
+  "be13c759e8f61714166e8f43e2fd10d1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "43cee2065f8bc87f",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/43cee2065f8bc87f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610946067678,
+        "stop" : 1610946083003,
+        "duration" : 15325
+      }
+    } ]
+  },
+  "333e2a1555d24f84631e486bfc18c9b3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d8dfb964fc93796e",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/d8dfb964fc93796e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610946052904,
+        "stop" : 1610946061524,
+        "duration" : 8620
+      }
+    } ]
+  },
+  "76ba5cf7c0d0e2559287d721b630c376" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "52cd68dd493c2e5c",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/52cd68dd493c2e5c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610946080941,
+        "stop" : 1610946089643,
+        "duration" : 8702
+      }
+    } ]
+  },
+  "8f310c904882c6c0951413e9e7643371" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ff6621e692240f61",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/ff6621e692240f61",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610946079987,
+        "stop" : 1610946089488,
+        "duration" : 9501
+      }
+    } ]
+  },
+  "d82470d343457f2d441584fc361f9c4a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "909810d9d3ca8a23",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/909810d9d3ca8a23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610946051296,
+        "stop" : 1610946060775,
+        "duration" : 9479
+      }
+    } ]
+  }
+}

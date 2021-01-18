@@ -1,0 +1,81 @@
+[ {
+  "uid" : "52cd68dd493c2e5c",
+  "name" : "vrt_main_page_modal_window_top_right_button_with_valid_credentials_before_click",
+  "time" : {
+    "start" : 1610946080941,
+    "stop" : 1610946089643,
+    "duration" : 8702
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5b13c0b0a560ecd",
+  "name" : "test_AT_1_login_from_main_page_with_valid_credentials",
+  "time" : {
+    "start" : 1610946051690,
+    "stop" : 1610946075762,
+    "duration" : 24072
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff6621e692240f61",
+  "name" : "test_AT_5_login_from_token",
+  "time" : {
+    "start" : 1610946079987,
+    "stop" : 1610946089488,
+    "duration" : 9501
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8dfb964fc93796e",
+  "name" : "test_AT_4_login_from_login_page_with_invalid_credentials",
+  "time" : {
+    "start" : 1610946052904,
+    "stop" : 1610946061524,
+    "duration" : 8620
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a37d10bac2f28e1b",
+  "name" : "test_AT_6_vrt_main_page",
+  "time" : {
+    "start" : 1610946066664,
+    "stop" : 1610946077099,
+    "duration" : 10435
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43cee2065f8bc87f",
+  "name" : "test_AT_7_vrt_main_page_click_on_the_yellow_button",
+  "time" : {
+    "start" : 1610946067678,
+    "stop" : 1610946083003,
+    "duration" : 15325
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "909810d9d3ca8a23",
+  "name" : "test_AT_2_login_from_main_page_with_invalid_credentials",
+  "time" : {
+    "start" : 1610946051296,
+    "stop" : 1610946060775,
+    "duration" : 9479
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "919dd9524398a162",
+  "name" : "test_AT_3_login_from_login_page_with_valid_credentials",
+  "time" : {
+    "start" : 1610946050839,
+    "stop" : 1610946075826,
+    "duration" : 24987
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
