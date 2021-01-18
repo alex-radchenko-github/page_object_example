@@ -1,0 +1,150 @@
+{
+  "uid" : "217ccdf3107e8d07",
+  "name" : "test_AT_6_vrt_main_page",
+  "fullName" : "tests.Regression testing.VRT.Main_page.test_Regression_testing_VRT_Main_page#test_AT_6_vrt_main_page",
+  "historyId" : "5ce805ea10db0a573c0a40bfd8a75fd7",
+  "time" : {
+    "start" : 1610950552598,
+    "stop" : 1610950562758,
+    "duration" : 10160
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1610950549057,
+      "stop" : 1610950552597,
+      "duration" : 3540
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "go_to_site",
+      "time" : {
+        "start" : 1610950553036,
+        "stop" : 1610950557309,
+        "duration" : 4273
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'/'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1610950562759,
+      "stop" : 1610950564205,
+      "duration" : 1446
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a0ee85a9c17447bd",
+      "name" : "Screenshot",
+      "source" : "a0ee85a9c17447bd.png",
+      "type" : "image/png",
+      "size" : 199852
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "test_UI"
+  }, {
+    "name" : "feature",
+    "value" : "main_page"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.Regression testing.VRT.Main_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_Regression_testing_VRT_Main_page"
+  }, {
+    "name" : "host",
+    "value" : "fv-az58-312"
+  }, {
+    "name" : "thread",
+    "value" : "5034-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.Regression testing.VRT.Main_page.test_Regression_testing_VRT_Main_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://app.qase.io/case/AT-6",
+    "url" : "https://app.qase.io/case/AT-6",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "a37d10bac2f28e1b",
+        "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/a37d10bac2f28e1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1610946066664,
+          "stop" : 1610946077099,
+          "duration" : 10435
+        }
+      } ]
+    },
+    "tags" : [ "test_UI", "smoke" ]
+  },
+  "source" : "217ccdf3107e8d07.json",
+  "parameterValues" : [ ]
+}

@@ -3,6 +3,13 @@
   "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153/",
   "reportName" : "Allure Report with history",
   "data" : {
+    "duration" : 37260
+  }
+}, {
+  "buildOrder" : 153,
+  "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153/",
+  "reportName" : "Allure Report with history",
+  "data" : {
     "duration" : 38804
   }
 } ]

@@ -4,11 +4,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5a101dd6adf88b5",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/5a101dd6adf88b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610950538534,
+        "stop" : 1610950561355,
+        "duration" : 22821
+      }
+    }, {
       "uid" : "a5b13c0b0a560ecd",
       "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/a5b13c0b0a560ecd",
       "status" : "passed",
@@ -24,11 +33,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "934b55fba063c460",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/934b55fba063c460",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610950539993,
+        "stop" : 1610950564771,
+        "duration" : 24778
+      }
+    }, {
       "uid" : "919dd9524398a162",
       "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/919dd9524398a162",
       "status" : "passed",
@@ -44,11 +62,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "217ccdf3107e8d07",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/217ccdf3107e8d07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610950552598,
+        "stop" : 1610950562758,
+        "duration" : 10160
+      }
+    }, {
       "uid" : "a37d10bac2f28e1b",
       "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/a37d10bac2f28e1b",
       "status" : "passed",
@@ -64,11 +91,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bdf1353e12caa1b2",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/bdf1353e12caa1b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610950553368,
+        "stop" : 1610950567149,
+        "duration" : 13781
+      }
+    }, {
       "uid" : "43cee2065f8bc87f",
       "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/43cee2065f8bc87f",
       "status" : "passed",
@@ -84,11 +120,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "a76f84eb7c96594a",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/a76f84eb7c96594a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610950538536,
+        "stop" : 1610950547988,
+        "duration" : 9452
+      }
+    }, {
       "uid" : "d8dfb964fc93796e",
       "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/d8dfb964fc93796e",
       "status" : "passed",
@@ -104,11 +149,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "c5f628f179c837a4",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/c5f628f179c837a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610950567924,
+        "stop" : 1610950575794,
+        "duration" : 7870
+      }
+    }, {
       "uid" : "52cd68dd493c2e5c",
       "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/52cd68dd493c2e5c",
       "status" : "passed",
@@ -124,11 +178,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "1e5a6b4dfeb0c6a9",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/1e5a6b4dfeb0c6a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610950565960,
+        "stop" : 1610950573808,
+        "duration" : 7848
+      }
+    }, {
       "uid" : "ff6621e692240f61",
       "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/ff6621e692240f61",
       "status" : "passed",
@@ -144,11 +207,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5e54dd78d0c2320e",
+      "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/5e54dd78d0c2320e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610950539048,
+        "stop" : 1610950548389,
+        "duration" : 9341
+      }
+    }, {
       "uid" : "909810d9d3ca8a23",
       "reportUrl" : "https://alex-radchenko-github.github.io/page_object_example/153//#testresult/909810d9d3ca8a23",
       "status" : "passed",
