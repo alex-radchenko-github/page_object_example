@@ -5,7 +5,7 @@ from src.pages.main_page import MainPageHelper
 from src.pages.login_page import LoginPageHelper
 
 
-@allure.testcase("AT-1")
+@allure.testcase("https://app.qase.io/case/AT-1")
 @allure.feature("login")
 @allure.title("login_from_main_page_with_valid_credentials")
 @pytest.mark.smoke
@@ -16,7 +16,7 @@ def test_login_from_main_page_with_valid_credentials(browser):
    main_page.full_login(accounts.acc["radwexe"])
    main_page.login_check()
 
-@allure.testcase("AT-2")
+@allure.testcase("https://app.qase.io/case/AT-2")
 @allure.feature("login")
 @allure.title("login_from_main_page_with_invalid_credentials")
 @pytest.mark.smoke
@@ -27,7 +27,7 @@ def test_login_from_main_page_with_invalid_credentials(browser):
    main_page.full_login(accounts.acc["radwexe_invalid"])
    main_page.check_invalid_credentials()
 
-@allure.testcase("AT-3")
+@allure.testcase("https://app.qase.io/case/AT-3")
 @allure.feature("login")
 @allure.title("login_from_login_page_with_valid_credentials")
 @pytest.mark.smoke
@@ -38,7 +38,7 @@ def test_login_from_login_page_with_valid_credentials(browser):
    login_page.full_login(accounts.acc["radwexe"])
    login_page.login_check()
 
-@allure.testcase("AT-4")
+@allure.testcase("https://app.qase.io/case/AT-4")
 @allure.feature("login")
 @allure.title("login_from_login_page_with_invalid_credentials")
 @pytest.mark.smoke
@@ -50,11 +50,11 @@ def test_login_from_login_page_with_invalid_credentials(browser):
    login_page.check_invalid_credentials()
 
 
+@allure.testcase("https://app.qase.io/case/AT-5")
 @allure.feature("login")
 @allure.title("test_login_from_token")
 @pytest.mark.smoke
 @allure.tag("test_UI")
-@allure.testcase("AT-5")
 def test_login_from_token(browser):
    test_login_from_token = MainPageHelper(browser)
    test_login_from_token.go_to_site_through_token()
