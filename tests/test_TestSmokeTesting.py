@@ -13,6 +13,7 @@ from src.pages.login_page import LoginPageHelper
 def test_login_from_main_page_with_valid_credentials(browser):
    main_page = MainPageHelper(browser)
    main_page.go_to_site("/")
+
    main_page.full_login(accounts.acc["radwexe"])
    main_page.login_check()
 

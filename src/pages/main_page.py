@@ -53,16 +53,16 @@ class MainPageHelper(BasePage):
         assert check_el.is_displayed()
 
 
-    def screenshot_check(self):
+    def screenshot_check(self, vrt_name, vrt_viewport, vrt_os, vrt_device):
         vrt = VisualRegressionTracker()
         scr = self.screenshot_for_vrt()
         with vrt:
             vrt.track(TestRun(
-                name='at_main',
+                name=vrt_name,
                 imageBase64=scr,
                 diffTollerancePercent=0,
-                os='Mac',
+                os=vrt_os,
                 browser='Chrome',
-                viewport='1920x964',
-                device='Selenoid',
+                viewport=vrt_viewport,
+                device=vrt_device,
             ))
