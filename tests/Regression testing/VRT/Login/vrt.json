@@ -2,7 +2,7 @@
     "apiUrl": "http://104.248.78.141:4200",
     "apiKey": "YYJSBHYHD0MB77PFBNBFJ6X79FRZ",
     "project": "17e877ec-1c7a-4720-8f78-3c506107edf8",
-    "branchName": "at",
+    "branchName": "at-test",
     "ciBuildId": "prod",
     "enableSoftAssert": false
 }
