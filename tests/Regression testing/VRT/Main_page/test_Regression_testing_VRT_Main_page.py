@@ -7,7 +7,7 @@ from src.pages.login_page import LoginPageHelper
 
 @allure.testcase("https://app.qase.io/case/AT-6")
 @allure.feature("main_page")
-@allure.title("vrt_main_page")
+@allure.title("test_AT_6_vrt_main_page")
 @pytest.mark.smoke
 @allure.tag("test_UI")
 def test_AT_6_vrt_main_page(browser):

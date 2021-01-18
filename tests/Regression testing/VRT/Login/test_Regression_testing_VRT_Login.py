@@ -9,7 +9,7 @@ from src.accounts import acc
 
 @allure.testcase("https://app.qase.io/case/AT-7")
 @allure.feature("login")
-@allure.title("vrt_main_page_click_on_the_yellow_button")
+@allure.title("test_AT_7_vrt_main_page_click_on_the_yellow_button")
 @pytest.mark.smoke
 @allure.tag("test_UI")
 def test_AT_7_vrt_main_page_click_on_the_yellow_button(browser):

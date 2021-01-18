@@ -7,7 +7,7 @@ from src.pages.login_page import LoginPageHelper
 
 @allure.testcase("https://app.qase.io/case/AT-1")
 @allure.feature("login")
-@allure.title("login_from_main_page_with_valid_credentials")
+@allure.title("test_AT_1_login_from_main_page_with_valid_credentials")
 @pytest.mark.smoke
 @allure.tag("test_UI")
 def test_AT_1_login_from_main_page_with_valid_credentials(browser):
@@ -19,7 +19,7 @@ def test_AT_1_login_from_main_page_with_valid_credentials(browser):
 
 @allure.testcase("https://app.qase.io/case/AT-2")
 @allure.feature("login")
-@allure.title("login_from_main_page_with_invalid_credentials")
+@allure.title("test_AT_2_login_from_main_page_with_invalid_credentials")
 @pytest.mark.smoke
 @allure.tag("test_UI")
 def test_AT_2_login_from_main_page_with_invalid_credentials(browser):
@@ -30,7 +30,7 @@ def test_AT_2_login_from_main_page_with_invalid_credentials(browser):
 
 @allure.testcase("https://app.qase.io/case/AT-3")
 @allure.feature("login")
-@allure.title("login_from_login_page_with_valid_credentials")
+@allure.title("test_AT_3_login_from_login_page_with_valid_credentials")
 @pytest.mark.smoke
 @allure.tag("test_UI")
 def test_AT_3_login_from_login_page_with_valid_credentials(browser):
@@ -41,7 +41,7 @@ def test_AT_3_login_from_login_page_with_valid_credentials(browser):
 
 @allure.testcase("https://app.qase.io/case/AT-4")
 @allure.feature("login")
-@allure.title("login_from_login_page_with_invalid_credentials")
+@allure.title("test_AT_4_login_from_login_page_with_invalid_credentials")
 @pytest.mark.smoke
 @allure.tag("test_UI")
 def test_AT_4_login_from_login_page_with_invalid_credentials(browser):
@@ -53,7 +53,7 @@ def test_AT_4_login_from_login_page_with_invalid_credentials(browser):
 
 @allure.testcase("https://app.qase.io/case/AT-5")
 @allure.feature("login")
-@allure.title("test_login_from_token")
+@allure.title("test_AT_5_login_from_token")
 @pytest.mark.smoke
 @allure.tag("test_UI")
 def test_AT_5_login_from_token(browser):
