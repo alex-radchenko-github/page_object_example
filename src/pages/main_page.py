@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from src.baseapp import BasePage
 import allure
+from visual_regression_tracker import VisualRegressionTracker, Config, TestRun
 
 
 class MainPageLoginLokators:
@@ -9,6 +10,7 @@ class MainPageLoginLokators:
     LOCATOR_PASSWORD_FIELD = (By.XPATH, "//input[@name='password']")
     LOCATOR_ENTER_BUTTON = (By.XPATH, "//button[contains(text(), 'Войти')]")
     LOCATOR_CHECK_CREATE_COURS = (By.LINK_TEXT, "Создать курс в папке")
+    LOCATOR_CHECK_INVALID_CREDENTIALS = (By.XPATH, "//*[@class='responseError']")
 
 
 class MainPageHelper(BasePage):
@@ -44,3 +46,23 @@ class MainPageHelper(BasePage):
     def login_check(self):
         check_el = self.find_element(MainPageLoginLokators.LOCATOR_CHECK_CREATE_COURS)
         assert check_el.is_displayed()
+
+    @allure.step
+    def check_invalid_credentials(self):
+        check_el = self.find_element(MainPageLoginLokators.LOCATOR_CHECK_INVALID_CREDENTIALS)
+        assert check_el.is_displayed()
+
+
+    def screenshot_check(self):
+        vrt = VisualRegressionTracker()
+        scr = self.screenshot_for_vrt()
+        with vrt:
+            vrt.track(TestRun(
+                name='at_main',
+                imageBase64=scr,
+                diffTollerancePercent=0,
+                os='Mac',
+                browser='Chrome',
+                viewport='1920x964',
+                device='Selenoid',
+            ))

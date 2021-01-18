@@ -22,8 +22,8 @@ class BasePage:
                                                       message=f"Can't find elements by locator {locator}")
     #go to page
     @allure.step
-    def go_to_site(self):
-        self.driver.get(self.base_url)
+    def go_to_site(self, url):
+        self.driver.get(self.base_url + url)
 
     @allure.step
     def go_to_site_through_token(self):
@@ -41,3 +41,6 @@ class BasePage:
     @allure.step
     def screenshot(self):
         self.driver.get_screenshot_as_png()
+
+    def screenshot_for_vrt(self):
+        return self.driver.get_screenshot_as_base64()
