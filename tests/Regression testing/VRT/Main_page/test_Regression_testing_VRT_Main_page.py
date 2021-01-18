@@ -10,7 +10,7 @@ from src.pages.login_page import LoginPageHelper
 @allure.title("vrt_main_page")
 @pytest.mark.smoke
 @allure.tag("test_UI")
-def test_vrt_main_page(browser):
+def test_AT_6_vrt_main_page(browser):
     main_page = MainPageHelper(browser)
     main_page.go_to_site("/")
-    main_page.screenshot_check('AT-6_test_vrt_main_page', '1920x964', 'linux','selenoid')
+    main_page.screenshot_check('test_AT_6_vrt_main_page', '1920x964', 'linux', 'selenoid')

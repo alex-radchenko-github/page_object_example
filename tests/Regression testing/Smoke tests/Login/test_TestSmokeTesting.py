@@ -10,7 +10,7 @@ from src.pages.login_page import LoginPageHelper
 @allure.title("login_from_main_page_with_valid_credentials")
 @pytest.mark.smoke
 @allure.tag("test_UI")
-def test_login_from_main_page_with_valid_credentials(browser):
+def test_AT_1_login_from_main_page_with_valid_credentials(browser):
    main_page = MainPageHelper(browser)
    main_page.go_to_site("/")
 
@@ -22,7 +22,7 @@ def test_login_from_main_page_with_valid_credentials(browser):
 @allure.title("login_from_main_page_with_invalid_credentials")
 @pytest.mark.smoke
 @allure.tag("test_UI")
-def test_login_from_main_page_with_invalid_credentials(browser):
+def test_AT_2_login_from_main_page_with_invalid_credentials(browser):
    main_page = MainPageHelper(browser)
    main_page.go_to_site("/")
    main_page.full_login(accounts.acc["radwexe_invalid"])
@@ -33,7 +33,7 @@ def test_login_from_main_page_with_invalid_credentials(browser):
 @allure.title("login_from_login_page_with_valid_credentials")
 @pytest.mark.smoke
 @allure.tag("test_UI")
-def test_login_from_login_page_with_valid_credentials(browser):
+def test_AT_3_login_from_login_page_with_valid_credentials(browser):
    login_page = LoginPageHelper(browser)
    login_page.go_to_site("/login")
    login_page.full_login(accounts.acc["radwexe"])
@@ -44,7 +44,7 @@ def test_login_from_login_page_with_valid_credentials(browser):
 @allure.title("login_from_login_page_with_invalid_credentials")
 @pytest.mark.smoke
 @allure.tag("test_UI")
-def test_login_from_login_page_with_invalid_credentials(browser):
+def test_AT_4_login_from_login_page_with_invalid_credentials(browser):
    login_page = LoginPageHelper(browser)
    login_page.go_to_site("/login")
    login_page.full_login(accounts.acc["radwexe_invalid"])
@@ -56,14 +56,7 @@ def test_login_from_login_page_with_invalid_credentials(browser):
 @allure.title("test_login_from_token")
 @pytest.mark.smoke
 @allure.tag("test_UI")
-def test_login_from_token(browser):
+def test_AT_5_login_from_token(browser):
    test_login_from_token = MainPageHelper(browser)
    test_login_from_token.go_to_site_through_token()
    test_login_from_token.login_check()
-
-
-
-# def test_vrt(browser):
-#     main_page = MainPageHelper(browser)
-#     main_page.go_to_site()
-#     main_page.screenshot_check()
